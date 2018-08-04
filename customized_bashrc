@@ -5,6 +5,15 @@ PS1+="\[$(tput setaf 54)\]\h ";   # hostname - computer
 PS1+="\[$(tput setaf 47)\]\W ";   # working Directory 
 PS1+="\[$(tput setaf 245)\]$ ";   # Dollar Sign 
 PS1+="\[$(tput sgr0)\]";          # reset normal terminal colors after $ 
+
+# enable bash completion in interactive shells
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
    	
 export PS1; 
 
