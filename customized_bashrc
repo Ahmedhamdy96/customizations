@@ -1,0 +1,12 @@
+
+PS1="\[$(tput setaf 54)\]\u" ;    # username
+PS1+="\[$(tput setaf 54)\] @ " ;  # @
+PS1+="\[$(tput setaf 54)\]\h ";   # hostname - computer
+PS1+="\[$(tput setaf 47)\]\W ";   # working Directory 
+PS1+="\[$(tput setaf 245)\]$ ";   # Dollar Sign 
+PS1+="\[$(tput sgr0)\]";          # reset normal terminal colors after $ 
+   	
+export PS1; 
+
+
+
