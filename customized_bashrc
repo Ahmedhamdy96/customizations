@@ -1,10 +1,10 @@
 
-PS1="\[$(tput setaf 54)\]\u" ;    # username
-PS1+="\[$(tput setaf 54)\] @ " ;  # @
-PS1+="\[$(tput setaf 54)\]\h ";   # hostname - computer
-PS1+="\[$(tput setaf 47)\]\W ";   # working Directory 
-PS1+="\[$(tput setaf 245)\]$ ";   # Dollar Sign 
-PS1+="\[$(tput sgr0)\]";          # reset normal terminal colors after $ 
+PS1="\[$(tput setaf 23)\]\u" ;    # username
+PS1+="\[$(tput setaf 23)\] @ " ;  # @
+PS1+="\[$(tput setaf 23)\]\h ";   # hostname - computer
+PS1+="\[$(tput setaf 47)\]\W ";   # working Directory
+PS1+="\[$(tput setaf 245)\]$ ";   # Dollar Sign
+PS1+="\[$(tput sgr0)\]";          # reset normal terminal colors after $
 
 # enable bash completion in interactive shells
 if ! shopt -oq posix; then
@@ -14,8 +14,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-   	
-export PS1; 
 
-
-
+export PS1;
